@@ -1,0 +1,708 @@
+/* ========== RESET & GLOBAL STYLES ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  
+  background-color: #ffe6ee;
+  color: #333;
+  padding-top: 80px;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'DM Serif Display', serif;
+}
+
+/* ========== NAVIGATION ========== */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  width: 100%;
+  padding: 0 1.5rem;
+}
+
+.logo img {
+  padding-top: 20px;
+  height: 180px;
+  width: 250px;
+  margin-right: 200px;
+}
+
+.nav-links {
+  display: flex;
+  flex: 1;
+  justify-content: space-evenly;
+  margin-left: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #301934;
+  font-weight: bold;
+  transition: color 0.3s;
+  text-align: center;
+  flex: 1;
+}
+
+.nav-links a:hover {
+  color: #9b6fa1;
+}
+
+.nav-links a.active {
+  color: #9b6fa1;
+  border-bottom: 2px solid #9b6fa1;
+  font-weight: bold;
+}
+
+/* ========== HOME: ABOUT SECTION LAYOUT ========== */
+.home-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 100px 2rem 2rem;
+}
+
+/* ========= BUTTON ============= */
+.home-text {
+  max-width: 600px;
+  text-align: center;
+}
+
+.cv-button {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 10px 20px;
+  background-color: #9b6fa1;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.cv-button:hover {
+  background-color: #6b4c7f;
+}
+
+/* ========== LEFT COLUMN (PROFILE PIC) ========== */
+.left-column {
+  flex-shrink: 0;
+}
+
+.profile-pic {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #9b6fa1;
+  margin-left: 0px;
+  margin-top: -50px;
+}
+
+/* ========== RIGHT COLUMN (TEXT) ========== */
+.right-column {
+  flex: 1;
+  position: relative;
+  padding-left: 150px;
+}
+
+.name-heading {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #301934;
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.home-text {
+  max-width: 600px;
+}
+
+/*============== FAVOURITE PRJOJECTS ================= */
+.favourite-projects {
+  margin-top: 60px;
+  padding: 20px;
+}
+
+.favourite-projects h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.card {
+  flex: 1;
+  min-width: 100px;
+  max-width: 33.3%;
+  margin: 0;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: COLUMN;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.card-content h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  font-size: 0.95rem;
+  color: #444;
+}
+
+/*=============== CONTACT PAGE ===================*/
+.contact-page {
+  padding: 60px 20px;
+  background-color: #fff;
+  color: #301934;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.info-box {
+  flex: 1;
+  min-width: 200px;
+  background-color: #ffe6ee;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.info-box i {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.info-box h4 {
+  margin: 10px 0 5px;
+  font-size: 1.2rem;
+}
+
+.contact-form-section {
+  background-color: #fdf9fc;
+  padding: 40px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-form-section h3 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contact-form-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form-section input,
+.contact-form-section textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: inherit;
+}
+
+.contact-form-section button {
+  background-color: #9b6fa1;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form-section button:hover {
+  background-color: #6b4c7f;
+}
+
+.info-box a {
+  color: #6b4c7f;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.info-box a:hover {
+  text-decoration: underline;
+  color: #9b6fa1;
+}
+.info-box a {
+  color: #6b4c7f;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.info-box a:hover {
+  text-decoration: underline;
+  color: #9b6fa1;
+}
+
+/* ===================== SKILLS PAGE ============*/
+
+.styling-changes {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: bold;
+  color: #9b6fa1;
+  animation: fadeUp 2s ease-in-out infinite alternate;
+  margin-bottom: 40px;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0.2;
+    transform: translateY(10px);
+  }
+  
+  to {
+    opacity: 1;
+    transform: translateY(-2px);
+  }
+  
+.skills-grid-section {
+  padding: 60px 20px;
+}
+}
+
+.section-heading-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.section-heading {
+  position: relative;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  text-align: left;
+  text-transform: uppercase;
+  padding-left: 50px;
+  color: #301934;
+  z-index: 1;
+}
+
+.section-heading::before {
+  display: none;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 25vw;
+  height: 5px;
+  background-color: #9b6fa1;
+  border-bottom-right-radius: 10px;
+  transform: translateY(50%);
+  z-index: 0;
+}
+
+.section-heading-wrapper.right .section-heading::before {
+  left: auto;
+  right: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 10px;
+}
+
+.skills-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 0 10px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+  margin-bottom: 60px;
+  padding: 0 20px;
+}
+
+.skill-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  height: 270px;
+}
+
+.skill-card img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.skill-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.skill-card p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* TOOLS SECTION */
+
+.tools-learning-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 40px;
+  padding: 60px 20px;
+  justify-content: space-between;
+}
+
+.tools-section,
+.learning-section {
+  flex: 1 1 45%;
+  background-color: #ffe6ee;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.tools-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 300px;
+  margin: 0;
+}
+
+.tool-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tool-name {
+  font-weight: bold;
+  color: #301934;
+}
+
+/* === TOOL DOTS === */
+.tool-dots {
+  display: flex;
+  gap: 6px;
+}
+
+.tool-dots::before,
+.tool-dots::after {
+  content: "";
+  display: none;
+}
+
+.tool-dots span,
+.tool-dots::before {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid #ccc;
+}
+
+.tool-dots[data-score] {
+  display: flex;
+}
+
+.tool-dots[data-score]::before {
+  display: none;
+}
+
+.tool-dots[data-score]::after {
+  display: none;
+}
+
+/* Dynamically fill based on score */
+.tool-dots[data-score] {
+  position: relative;
+}
+
+.tool-dots[data-score]::before {
+  content: "";
+  position: absolute;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.tool-dots[data-score] span:nth-child(-n+1) { background-color: #9b6fa1; }
+.tool-dots[data-score="2"] span:nth-child(-n+2) { background-color: #9b6fa1; }
+.tool-dots[data-score="3"] span:nth-child(-n+3) { background-color: #9b6fa1; }
+.tool-dots[data-score="4"] span:nth-child(-n+4) { background-color: #9b6fa1; }
+.tool-dots[data-score="4.5"] span:nth-child(-n+4),
+.tool-dots[data-score="4.5"] span:nth-child(5)::after {
+  background-color: #9b6fa1;
+}
+.tool-dots[data-score="5"] span { background-color: #9b6fa1; }
+
+.tool-dots span {
+  width: 14px;
+  height: 14px;
+  background-color: white;
+  border: 1px solid #9b6fa1;
+  border-radius: 50%;
+}
+
+/* === DEFAULT: always show 5 dots === */
+.tool-dots::before {
+  content: '';
+}
+
+.tool-dots {
+  display: flex;
+}
+
+.tool-dots::before,
+.tool-dots span {
+  margin-right: 3px;
+}
+
+.tool-dots span:nth-child(n+6) {
+  display: none;
+}
+
+/* ====== CURRENTLY LEARNING ========*/
+.square-box {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: 2px solid #301934;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.learning-section {
+  padding: 40px 20px;
+  max-width: 600px;
+  margin-left: auto;
+  padding-left: 50px;
+}
+
+.learning-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.learning-list li {
+  font-size: 1rem;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* Make headings stand above line properly */
+.section-heading-wrapper {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.section-heading {
+  position: relative;
+  background: white;
+  display: inline-block;
+  padding: 0 10px;
+  z-index: 2;
+}
+
+/* Ensure square boxes show up */
+.square-box {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: 2px solid #301934;
+  margin-right: 10px;
+  vertical-align: middle;
+  background-color: transparent;
+}
+
+/* Prevent skill cards from disappearing */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px 50px;
+}
+
+/* =========== PROJECTS PAGE ================== */
+
+/* ========== PROJECTS SECTION ========== */
+.projects-section {
+  margin-top: 60px;
+  padding: 20px;
+}
+
+.projects-section h1 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #301934;
+}
+
+.teaser-text {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.card {
+  flex: 1;
+  min-width: 100px;
+  max-width: 33.3%;
+  margin: 0;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.card-content h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #301934;
+}
+
+.card-content p {
+  font-size: 0.95rem;
+  color: #444;
+}
+
+/* COMING SOON BADGE */
+.coming-soon-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #9b6fa1;
+  color: white;
+  font-size: 0.75rem;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-weight: bold;
+  animation: pulse 2s infinite;
+  z-index: 2;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.1); opacity: 0.8; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.coming-soon {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #9b6fa1;
+  animation: fadeUp 2s ease-in-out infinite alternate;
+  margin-bottom: 40px;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0.2;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-2px);
+  }
+}
